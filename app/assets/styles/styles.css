@@ -139,6 +139,46 @@ img {
   display: table;
 }
 
+.section-title {
+  font-size: 3.75rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+.section-title strong {
+  font-weight: 500;
+}
+
+.section-title__icon {
+  margin-right: 0.5rem;
+}
+
+.row__medium-6 {
+  float: left;
+  width: 100%;
+}
+
+.feature {
+  position: relative;
+  padding-left: 5.6rem;
+  padding-bottom: 0.8rem;
+}
+
+.feature__icon {
+  position: absolute;
+  left: 0;
+}
+
+.feature__title {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+.feature__text {
+  line-height: 2;
+  font-weight: 100;
+}
+
 @media (min-width: 530px) {
   .large-hero__title {
     font-size: 4.8rem;
@@ -184,5 +224,10 @@ img {
 
   .wrapper-b-margin {
     margin-bottom: 3.8rem;
+  }
+
+  .row__medium-6 {
+    float: left;
+    width: 50%;
   }
 }
