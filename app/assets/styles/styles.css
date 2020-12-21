@@ -143,6 +143,7 @@ img {
   font-size: 3.75rem;
   font-weight: 300;
   text-align: center;
+  margin: 0;
 }
 
 .section-title strong {
@@ -151,6 +152,16 @@ img {
 
 .section-title__icon {
   margin-right: 0.5rem;
+  position: relative;
+  top: 8px;
+  height: 2rem;
+}
+
+.section-title--blue {
+  color: #2f5572;
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+  font-size: 2rem;
 }
 
 .row__medium-6 {
@@ -177,6 +188,50 @@ img {
 .feature__text {
   line-height: 2;
   font-weight: 100;
+}
+
+.testimonials {
+  background-color: #333;
+  padding-top: 2rem;
+}
+
+.testimonials__container {
+  padding: 3.5rem 0;
+}
+
+.testimonial {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 0 2rem 8rem 2rem;
+  margin: 0 1.5rem;
+  margin-bottom: 8rem;
+}
+
+.testimonial__title {
+  text-align: center;
+  color: #2f5572;
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin: 0.5rem 0;
+}
+
+.testimonial__subtitle {
+  color: #d59541;
+  font-size: 1rem;
+  margin: 0;
+  text-align: center;
+}
+
+.testimonials__icon {
+  border-radius: 50%;
+  position: relative;
+  left: 50%;
+  margin: 0 0 -80px 0;
+  transform: translate(-50%, -50%);
+  border: solid #fff 0.4rem;
+}
+
+.height-equal {
+  display: inline-block;
 }
 
 @media (min-width: 530px) {
@@ -229,5 +284,27 @@ img {
   .row__medium-6 {
     float: left;
     width: 50%;
+  }
+
+  .height-equal {
+    display: flex;
+  }
+
+  .height-equal > div {
+    float: none;
+    display: flex;
+  }
+
+  .testimonial {
+    padding-bottom: 2rem;
+    margin-bottom: 0;
+  }
+
+  .section-title--blue {
+    font-size: 4rem;
+  }
+
+  .section-title__icon {
+    height: 4rem;
   }
 }
